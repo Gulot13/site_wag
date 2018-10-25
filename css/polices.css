@@ -1,0 +1,23 @@
+@font-face
+{
+	font-family: LemonMilk;
+	src: url(../polices/LemonMilk.otf);
+}
+
+@font-face
+{
+	font-family: Quantify;
+	src: url(../polices/QuantifyBold.ttf);
+}
+
+@font-face
+{
+	font-family: Quicksand;
+	src: url(../polices/QuicksandBook.otf);
+}
+
+@font-face
+{
+	font-family: Sansation;
+	src: url(../polices/SansationLight.ttf);
+}
