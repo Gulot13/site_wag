@@ -44,7 +44,8 @@ nav a
 
 nav a:hover
 {
-	color: #ffae00
+	color: white;
+	text-decoration: none;
 }
 
 nav, .connexion
@@ -90,20 +91,15 @@ body
 	flex-direction: row;
 }
 
-.principal > *
-{
-	vertical-align: bottom;
-}
-
 .slogan
 {
-	font-family: Quicksand;
+	font-family: SanFrancisco;
 	margin-left: 48px;
 	color: rgb(255, 255, 255);
 	text-shadow: 2px 2px 4px black;
 	font-size: 3.5em;
 	position: absolute;
-	bottom: 20%;
+	padding-top: 550px;
 }
 
 .header
@@ -111,4 +107,9 @@ body
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.liens:hover
+{
+	text-decoration: none;
 }

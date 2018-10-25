@@ -21,3 +21,9 @@
 	font-family: Sansation;
 	src: url(../polices/SansationLight.ttf);
 }
+
+@font-face
+{
+	font-family: SanFranscico;
+	src: url(../polices/System_San_Francisco.ttf);
+}
