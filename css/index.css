@@ -1,3 +1,9 @@
+:root
+{
+	--shaImgHeadP: 50px;
+	--shaImgHeadN: -50px;
+}
+
 .principal
 {
 	background-image: url(../images/headerbackground.png);
@@ -17,14 +23,6 @@
 h1, h2, h3, h4, h5, h6
 {
 	font-weight: normal;
-}
-
-header
-{
-	display: flex;
-	flex-direction: column;
-	height: 140px;
-	position: absolute;
 }
 
 .logo
@@ -73,43 +71,61 @@ body
 	flex-direction: row;
 }
 
-.section1
+.article1
 {
 	width: 100%;
-	height: 1000px;
 	background-color: #232323;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.sectionnav
+.article1 > nav
 {
-	margin-top: 40px;
+	margin-top: 0px;
 	padding: 20px;
 	display: flex;
 	flex-direction: row;
 }
 
+.slogan > h1
+{
+	border-top: 2px solid #b1acac;
+	padding-top: 10px;
+}
+
 .slogan
 {
 	font-family: SanFrancisco;
-	margin-left: 48px;
+	left: 60px !important;
+	bottom: 50px !important;
 	color: rgb(255, 255, 255);
 	text-shadow: 2px 2px 4px black;
 	font-size: 3.5em;
-	position: absolute;
-	padding-top: 550px;
-}
 
-.header
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
 
 .liens:hover
 {
 	text-decoration: none;
+}
+
+main
+{
+	display: block;
+}
+
+.navcolor
+{
+	color: #fff;
+}
+
+.shadow-img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset var(--shaImgHeadP) var(--shaImgHeadP) var(--shaImgHeadP) 0 #000, inset var(--shaImgHeadN) var(--shaImgHeadN) var(--shaImgHeadP) 0 #000;
+    top: 0;
+    left: 0;
 }

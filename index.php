@@ -18,7 +18,7 @@
 	<body>
 		<header>
 			<div class="w3-top">
-				<div class="w3-bar w3-black w3-card">
+				<div class="w3-bar navcolor w3-card">
 					<a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 					<a href="index.php" class="w3-bar-item w3-button w3-padding-large w3-hide-small liens">ACCUEIL</a>
 					<a target="_blank" href="https://discord.gg/Dm7cwsD" class="w3-bar-item w3-button w3-padding-large liens">INVITATION</a>
@@ -41,32 +41,39 @@
 				<a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
 			</div>
 		</header>
-		<div class="principal"> <!--Partie basse du header-->
-				<h1 class="slogan">BIENVENUE SUR WAG</h1>
-		</div>
-		<section class="section1">
-			<article>
-				<nav class="sectionnav">
+		<main class="w3-content" style="max-width: 1920px;">
+			<header class="w3-display-container">
+				<img src="images/headerbackground.png">
+				<div class="shadow-img"></div>
+				<div class="w3-display-bottomleft slogan">
+					<h1>BIENVENUE SUR WAG</h1>
+				</div>
+			</header>
+			<section class="article1">
+				<nav>
 					<a href="actualites.php">ACTUALITÉS</a>
 					<a href="creations.php">CRÉATIONS</a>
 					<a href="communautes.php">COMMUNAUTÉS</a>
 				</nav>
-			</article>
-			<section class="section">
-				<div class="info">
-					
-				</div>
-				<div class="articles">
-					
-				</div>
 			</section>
-		</section>
+		</main>
 	</body>
 
 	<footer>
 		
 	</footer>
 	<script>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var scroll = $(window).scrollTop();
+				if (scroll > 10) {
+					$(".navcolor").css("background" , "#000");
+				}
+				else{
+					$(".navcolor").css("background" , "none");  	
+				}
+			});
+		});
 		function myFunction() {
 			var x = document.getElementById("navDemo");
 			if (x.className.indexOf("w3-show") == -1) {
